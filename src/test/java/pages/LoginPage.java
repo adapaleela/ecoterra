@@ -39,12 +39,20 @@ public class LoginPage
 		PageFactory.initElements(driver,this);
 	}
 	
-	public void selectDropDown()
+	public void selectDropDownAdmin()
 	{
 		logintype.click();
 		Select s=new Select(logintype);
 		s.selectByVisibleText("Admin");
 	}
+	
+	public void selectDropDownCustomer()
+	{
+		logintype.click();
+		Select s=new Select(logintype);
+		s.selectByVisibleText("Customer");
+	}
+
 	
 	public void filluid(String x)
 	{

@@ -58,7 +58,14 @@ public class EcoterraGluecode
 	public void method()
 	{
 		wait.until(ExpectedConditions.visibilityOf(lp.logintype));
-		lp.selectDropDown();
+		lp.selectDropDownAdmin();
+	}
+	
+	@When("^click on dropdown and select Customer from dropdown$")
+	public void methodc()
+	{
+		wait.until(ExpectedConditions.visibilityOf(lp.logintype));
+		lp.selectDropDownCustomer();
 	}
 	
 	@And("^fill username \"(.*)\"$")
